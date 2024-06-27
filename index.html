@@ -6,11 +6,12 @@
     <title>Gradient</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tailwind_out.css">
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="gradients.css">
 </head>
 <body>
-    <div id="mainContainer">
+    <div id="mainContainer" class="mix-blend-difference">
         <header>
             <div id="headerContainer">
                 <div id="mainName">
@@ -41,7 +42,7 @@
                         Design
                     </div>
                 </div>
-                <div class="secondSectionTextContainer" style="text-align: center; position: sticky; bottom: 70%;">Colorful</div>
+                <div class="secondSectionTextContainer text-center sticky bottom-3/4">Colorful</div>
                 <div id="originalGradient2">
                     <div class="secondSectionTextContainer">
                         Interactive
@@ -67,8 +68,8 @@
             </div>
         </section>
         <section>
-            <div class="container" style="margin-bottom: 10%;">
-                <div id="radialGradient3"></div>
+            <div class="container">
+                <div id="radialGradient3" class="mb-[10%]"></div>
             </div>
         </section>
         <section>
@@ -82,9 +83,9 @@
                 </div>
                 <form action="" id="contacts-form">
                     <h3>Send us an Email</h3>
-                    <input type="email" placeholder="Your Email" style="background-color: transparent;">
-                    <textarea placeholder="Your Message" style="background-color: transparent; border-color: black;"></textarea>
-                    <button type="submit" style="background-color: transparent;">Send Message</button>
+                    <input type="email" placeholder="Your Email" class="bg-transparent">
+                    <textarea placeholder="Your Message" class="bg-transparent border-black"></textarea>
+                    <button type="submit" class="mix-blend-difference border-black">Send Message</button>
                 </form>
             </div>
         </section>
