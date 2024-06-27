@@ -1,0 +1,161 @@
+::-webkit-scrollbar {
+    width: 5px;
+    background-image: linear-gradient(blue, green);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(pink, brown);
+    border-radius: 5px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+#originalGradient1:hover{
+    transform: rotate(180deg);
+    filter: invert(1);
+    transition: filter 1s, transform 3s;
+}
+
+#originalGradient2:hover{
+    transform: rotate(-180deg) scale(0.5, 0.5);
+}
+
+#radialGradient3:hover{
+    border-radius: 50%;
+    transform: rotate(90deg) ;
+}
+
+@keyframes rotate {
+    10% {
+        opacity: 0%
+    }
+    15% {
+        opacity: 0%;
+    }
+    25% {
+        transform:rotate(90deg);
+        opacity: 100%;
+    }
+    35% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 0%;
+    }
+    50% {
+        transform:rotate(0deg);
+        opacity: 100%;
+    }
+    60% {
+        opacity: 0%;
+    }
+    65% {
+        opacity: 0%;
+    }
+    75% {
+        transform:rotate(360deg);
+        opacity: 100%;
+    }
+    85% {
+        opacity: 0%;
+    }
+    90% {
+        opacity: 0%;
+    }
+    100% {
+        transform:rotate(-1800deg);
+        opacity:100%;
+    }
+}
+
+@keyframes blinkFirst {
+    0% {
+        opacity: 0%;
+    }
+    5% {
+        opacity: 0%;
+    }
+    10% {
+        opacity: 100%
+    }
+    15% {
+        opacity: 100%;
+    }
+    25% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+@keyframes blinkSecond {
+    0% {
+        opacity: 0%;
+    }
+    30% {
+        opacity: 0%;
+    }
+    35% {
+        opacity: 100%
+    }
+    40% {
+        opacity: 100%;
+    }
+    45% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+@keyframes blinkThird {
+    0% {
+        opacity: 0%;
+    }
+    55% {
+        opacity: 0%;
+    }
+    60% {
+        opacity: 100%
+    }
+    65% {
+        opacity: 100%;
+    }
+    70% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes blinkFourth {
+    0% {
+        opacity: 0%;
+    }
+    80% {
+        opacity: 0%;
+    }
+    85% {
+        opacity: 100%
+    }
+    90% {
+        opacity: 100%;
+    }
+    95% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}

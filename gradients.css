@@ -1,0 +1,48 @@
+#importedGradient{
+    height: 100vh;
+    width: 90vw;
+    border-radius: 25px;
+}
+
+#originalGradient1{
+    transform: translate(20vw, 0px);
+    position: sticky;
+    top: 15px;
+    height: 20vw;
+    width: 20vw;
+    background-image: repeating-conic-gradient(at 50% 75%, blue 10deg, pink 20deg, purple 30deg, pink 40deg, blue 50deg);
+    border-radius: 50%;
+    transition: filter 2s, transform 5s;
+}
+
+#originalGradient2{
+    transform: translate(-20vw, 0px);
+    position: sticky;
+    bottom: 15px;
+    height: 20vw;
+    width: 20vw;  
+    background-image: repeating-conic-gradient(at 50% 25%, blue 10deg, pink 20deg, purple 30deg, pink 40deg, blue 50deg);
+    border-radius: 10%;
+    transition:  transform 3s;
+}
+
+#originalGradient3{
+    height: 50vw;
+    width: 50vw;
+    background-image: repeating-conic-gradient(red, green 30deg, white 60deg, red 90deg);
+    border-radius: 50%;
+
+    /* transition: transform 3s; */
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#radialGradient3{
+    height: 50vw;
+    width: 50vw;
+    background-image: radial-gradient(circle, rgb(1, 78, 59), rgb(231, 172, 9), rgb(0, 0, 0));
+    border-radius: 5px;
+    transition: border-radius 3s, transform 2s;
+    overflow: hidden;
+}
